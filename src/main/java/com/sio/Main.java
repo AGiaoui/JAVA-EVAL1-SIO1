@@ -2,6 +2,7 @@ package com.sio;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
+import java.util.Vector;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -33,8 +34,24 @@ public class Main {
                     System.out.println("Exercice 1");
                     System.out.println("---------------------------------------------");
                     //Exercice 1 : Entrer votre code ici
+import java.util.Scanner;
 
-
+                    public class Exercice1 {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            System.out.print("Entrez un nombre : ");
+                            double nombre = scanner.nextDouble();
+                            System.out.print("Entrez une puissance (doit être supérieure à 0) : ");
+                            int puissance = scanner.nextInt();
+                            if (puissance <= 0) {
+                                System.out.println("Erreur : La puissance doit être supérieure à 0.");
+                            } else {
+                                double resultat = Math.pow(nombre, puissance);
+                                System.out.println(nombre + " à la puissance " + puissance + " est égal à " + resultat);
+                            }
+                            scanner.close();
+                        }
+                    }
 
                     System.out.println("---------------------------------------------");
                     break;
@@ -43,17 +60,48 @@ public class Main {
                     System.out.println("Exercice 2");
                     System.out.println("---------------------------------------------");
                     //Exercice 2 : Entrer votre code ici
+import Scanner;
 
-
-
-
-                    System.out.println("---------------------------------------------");
+                    public class Exercice2 {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            
+                            System.out.print("Entrez le nombre de kilomètres parcourus : ");
+                            double kilometers = scanner.nextDouble();
+                            double frais;
+                            if (kilometers < 100) {
+                                frais = kilometers * 0.20;
+                            } if (kilometers <= 500) {
+                                frais = kilometers * 0.50;
+                            } else {
+                                frais = kilometers * 0.80;
+                                System.out.println("---------------------------------------------");
+                  
+                  
                     break;
                 case 3:
                     System.out.println("---------------------------------------------");
                     System.out.println("Exercice 3");
                     System.out.println("---------------------------------------------");
                     //Exercice 3 : Entrer votre code ici
+import java.util.Scanner;
+
+                    public class Exercice3 {
+                        public static void main(String[] args) {
+                            Scanner scanner = new Scanner(System.in);
+                            System.out.print("Entrez la largeur du rectangle : ");
+                            int largeur = scanner.nextInt();
+                            System.out.print("Entrez la hauteur du rectangle : ");
+                            int hauteur = scanner.nextInt();
+                            for (int i = 0; i < hauteur; i++) {
+                                for (int j = 0; j < largeur; j++) {
+                                    System.out.print("* ");
+                                }
+                                System.out.println();
+                            }
+                            scanner.close();
+                        }
+                    }
 
 
 
@@ -79,4 +127,7 @@ public class Main {
             }
         }
     }
-}
+                    break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + choice);
+            }
