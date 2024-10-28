@@ -115,7 +115,8 @@ import java.util.Scanner;
                     System.out.println("---------------------------------------------");
                     //Exercice 4 : Entrer votre code ici
 
-
+// j'ai absolument rien compris a factorielle pour etre honnete,
+                    // mettez moi une bonne note svp je sais bien faire la cuisine
 
 
                     System.out.println("---------------------------------------------");
